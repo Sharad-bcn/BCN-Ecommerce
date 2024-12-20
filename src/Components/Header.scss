@@ -1,0 +1,95 @@
+/* Basic reset and styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #343a40; /* Dark background color */
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff !important; /* White color for the brand */
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-toggler {
+    border-color: #fff; /* White border for the toggler */
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* White icon color */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #fff !important; /* White color for nav links */
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #f39c12 !important; /* Gold color for hover */
+    background-color: #495057; /* Darken background on hover */
+    text-decoration: none;
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+    color: #f39c12 !important; /* Active link color (gold) */
+    font-weight: bold;
+  }
+  
+  /* Navbar form and search button */
+  .form-control {
+    border-radius: 20px;
+    padding-left: 15px;
+    width: 250px;
+  }
+  
+  .btn-outline-success {
+    border-radius: 20px;
+    color: #28a745;
+    border-color: #28a745;
+    font-weight: bold;
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+  }
+  
+  /* Navbar collapse on mobile */
+  @media (max-width: 991px) {
+    .navbar-nav .nav-item {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .navbar-nav .nav-item .nav-link {
+      font-size: 1.2rem;
+    }
+  
+    .form-control {
+      width: auto; /* Adjust the search input width on smaller screens */
+    }
+  
+    .navbar .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  /* Additional styling for active link */
+  .navbar-nav .nav-item .nav-link:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  
